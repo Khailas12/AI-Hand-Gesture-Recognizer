@@ -1,15 +1,11 @@
 import mediapipe as mp
 import cv2
-import time
 
 
 class HandDetector():
     def __init__(
-        self,
-        static_image_mode = False,
-        max_hands = 2,
-        min_detection_confidence = 0.5,
-        min_tracking_confidence = 0.5):
+        self, static_image_mode = False, max_hands = 2, 
+        min_detection_confidence = 0.5, min_tracking_confidence = 0.5):
         
         self.static_image_mode = static_image_mode
         self.max_hands = max_hands

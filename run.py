@@ -1,5 +1,5 @@
-import main as ht
+import main as mn
 
 if __name__ == "__main__":
-    ht.main()
-    
+    mn.main()
+
