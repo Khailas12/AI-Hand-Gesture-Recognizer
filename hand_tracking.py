@@ -16,6 +16,7 @@ class HandDetector():
         self.min_detection_confidence = min_detection_confidence
         self.min_tracking_confidence = min_tracking_confidence
         
+        
         self.mp_hands = mp.solutions.hands
         self.hands = self.mp_hands.Hands(
             self.static_image_mode, self.max_hands, self.min_detection_confidence, self.min_tracking_confidence)
