@@ -13,7 +13,7 @@ def main():
     while True:
         success, camera = cam.read()
         camera = detector.find_hands(camera)
-        land_mark_list = detector.find_position(camera)
+        land_mark_list = detector.find_position(camera, draw = False)   # draw=False doesn't allow the thick circle on a finger to be shown
         if len(land_mark_list) != 0:
             print(land_mark_list[4])
         
