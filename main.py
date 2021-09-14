@@ -2,6 +2,7 @@ from hand_tracking import HandDetector
 import cv2
 import time
 
+
 def main():
     # franerate
     previous_time = 0
